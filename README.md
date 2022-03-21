@@ -1,28 +1,50 @@
-# ClinicaAcme
+# Sistema ACME para pacientes
+> Projeto desenvolvido para exibição de Crud por Yago Marialva Bentes.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
 
-## Development server
+O Sistema ACME para pacientes é um projeto desenvolvido em angular para aplicação dos conceitos de CRUD, criar, ler, atualizar e deletar dados
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+![](src/assets/acmemain.png)
 
-## Code scaffolding
+## Instalação
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+O projeto é composto de duas partes: o frontend em angular(principal) e o backend em json usando o nodejs.
+Para instalar o frontend, somente é necessário utilizar o comando:
+`npm install` 
 
-## Build
+Para o backend, deve-se clonar o repositório:
+`https://github.com/yagomarialva/MockedBackend.git` 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+depois de clonado, deve utilizar o comando:
+`npm install` 
 
-## Running unit tests
+## Exemplo de uso
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+O Sistema cadastra os pacientes de acordo com o seguinte formulário:
+![](src/assets/criarpaciente.png)
 
-## Running end-to-end tests
+Para atualizar um paciente:
+![](src/assets/atualizar.png)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Para mudar o status do paciente:
+![](src/assets/mudarstatus.png)
 
-## Further help
+## Histórico de lançamentos
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-# ClinicaACME
+* 0.0.1
+    * Primeira interação do sistema
+
+## Meta
+
+Yago Marialva Bentes – yago.marialva@gmail.com
+
+
+[https://github.com/yagomarialva](https://github.com/yagomarialva)
+
+## Contributing
+
+1. Faça o _fork_ do projeto (<https://github.com/yagomarialva/portifolio-site/fork>)
+2. Crie uma _branch_ para sua modificação (`git checkout -b feature/fooBar`)
+3. Faça o _commit_ (`git commit -am 'Add some fooBar'`)
+4. _Push_ (`git push origin feature/fooBar`)
+5. Crie um novo _Pull Request_
