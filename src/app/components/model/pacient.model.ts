@@ -1,7 +1,7 @@
 export interface Pacient {
     
     id?: number
-    name: string
+    name?: string
     date: any
     cpf: string
     gender: string

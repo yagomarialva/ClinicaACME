@@ -10,13 +10,13 @@ import { NavComponent } from './components/template/nav/nav.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 
-import { MatSidenavModule } from  '@angular/material/sidenav';
-import { MatCardModule } from  '@angular/material/card';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
 
-import { MatButtonModule } from  '@angular/material/button';
-import { MatSnackBarModule } from  '@angular/material/snack-bar';
-import { HttpClientModule } from  '@angular/common/http';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { HttpClientModule } from '@angular/common/http';
 
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -25,13 +25,28 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeComponent } from './components/view/home/home.component';
+import { PacientsCrudComponent } from './components/view/pacients-crud/pacients-crud.component';
+import { CreateComponent } from './components/pacient/create/create.component';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import {MatSelectModule} from '@angular/material/select';
+import { ReadComponent } from './components/pacient/read/read.component';
+import { UpdateComponent } from './components/pacient/update/update.component';
+import { ChangeStatusComponent } from './components/pacient/change-status/change-status.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    NavComponent
+    NavComponent,
+    HomeComponent,
+    PacientsCrudComponent,
+    CreateComponent,
+    ReadComponent,
+    UpdateComponent,
+    ChangeStatusComponent
   ],
   imports: [
     BrowserModule,
@@ -52,8 +67,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
+    MatDatepickerModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatSelectModule 
+
   ],
-  providers: [],
+  providers: [
+    MatDatepickerModule
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

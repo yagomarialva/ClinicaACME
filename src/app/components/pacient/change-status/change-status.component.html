@@ -1,41 +1,40 @@
 <mat-card>
-    <mat-card-title>Alterar Paciente</mat-card-title>
+    <mat-card-title>Alterar Status</mat-card-title>
     <form>
         <mat-form-field>
-            <input matInput placeholder="Nome" [(ngModel)]="pacient.name" name="name">
+            <input matInput disabled placeholder="Nome" [(ngModel)]="pacient.name" name="name">
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeholder="Data de nascimento" [(ngModel)]="pacient.date" name="date"
-                [matDatepicker]="dp3" disabled>
-            <mat-datepicker-toggle matSuffix [for]="dp3" [(ngModel)]="pacient.date" name="date"></mat-datepicker-toggle>
-            <mat-datepicker #dp3 disabled="false"></mat-datepicker>
+            <input matInput placeholder="Data de nascimento" [(ngModel)]="pacient.date" name="date" disabled>
+            <!-- <mat-datepicker-toggle matSuffix [for]="dp3" [(ngModel)]="pacient.date" name="date"></mat-datepicker-toggle>
+            <mat-datepicker #dp3 disabled="false"></mat-datepicker> -->
         </mat-form-field>
         <mat-form-field>
-            <input type="number" matInput placeholder="CPF" [(ngModel)]="pacient.cpf" name="cpf">
+            <input disabled type="number" matInput placeholder="CPF" [(ngModel)]="pacient.cpf" name="cpf">
         </mat-form-field>
         <mat-form-field appearance="fill">
             <mat-label>Genero</mat-label>
-            <mat-select [(ngModel)]="pacient.gender" name="gender" >
-                <mat-option ></mat-option>
+            <mat-select disabled [(ngModel)]="pacient.gender" name="gender">
+                <mat-option></mat-option>
                 <mat-option [value]="option.value" *ngFor="let option of gender">{{ option.value }}</mat-option>
             </mat-select>
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeholder="Endereço" [(ngModel)]="pacient.endereco" name="endereco">
+            <input disabled matInput placeholder="Endereço" [(ngModel)]="pacient.endereco" name="endereco">
         </mat-form-field>
         <mat-form-field appearance="fill">
             <mat-label>Status</mat-label>
-            <mat-select disabled [(ngModel)]="pacient.status" name="status" >
-                <mat-option ></mat-option>
+            <mat-select [(ngModel)]="pacient.status" name="status">
+                <mat-option></mat-option>
                 <mat-option [value]="option.value" *ngFor="let option of status">{{ option.value }}</mat-option>
             </mat-select>
         </mat-form-field>
-        
+
     </form>
     <button mat-raised-button (click)="updateProduct()" color="primary">
         Atualizar
     </button>
-    
+
     <button mat-raised-button (click)="cancel()">
         Cancelar
     </button>
